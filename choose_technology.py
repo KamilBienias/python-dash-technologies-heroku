@@ -8,7 +8,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 # to trzeba do heroku
-# server = app.server
+server = app.server
 # to blokuje rzucanie wyjatkow, gdy callback nie jest w layout
 app.config.suppress_callback_exceptions = True
 
@@ -180,5 +180,5 @@ def learned_1_radio(value):
             html.H4("I have learned SpringBoot and FX.")
         ])
 
-if __name__ == '__main__':
-    app.run_server(debug=True)
+#if __name__ == '__main__':
+#    app.run_server(debug=True)
